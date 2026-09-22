@@ -323,12 +323,13 @@ footer{background:var(--dark);border-top:1px solid rgba(255,255,255,.05);padding
   .ab-photo-col{position:static;}
   .ab-photo{aspect-ratio:4/3;}
   #certs .cg{grid-template-columns:1fr 1fr;}
-  .phil-grid,.fl-grid,.comm-grid{grid-template-columns:1fr;}
+  .phil-grid,.fl-grid{grid-template-columns:1fr;}
+  #community .comm-grid{grid-template-columns:1fr;}
   .stat-band{flex-direction:column;}
   .stat-item{border-right:none;border-bottom:1px solid var(--border);}
   .dest-grid{grid-template-columns:1fr 1fr;}
   .brand-logo-grid{grid-template-columns:repeat(auto-fill,minmax(124px,1fr));}
-  .travel-intro{grid-template-columns:1fr;}
+  #travel .travel-intro{grid-template-columns:1fr;}
   .c-h{font-size:clamp(2.8rem,12vw,5rem);}
 }
 
@@ -995,7 +996,7 @@ html[data-density="compact"] .lab-card,html[data-density="compact"] .svc-card{pa
 .cx-ring{width:34px;height:34px;border:1.5px solid var(--accent);opacity:.7;transition:width .25s,height .25s,opacity .25s,border-color .25s;}
 .cx-ring.big{width:56px;height:56px;opacity:.9;border-color:var(--accent-dk);}
 .cx-ring.hide{opacity:0;}
-@media(hover:none),(prefers-reduced-motion:reduce){.cx-dot,.cx-ring{display:none;}}
+@media(hover:none),(prefers-reduced-motion:reduce){.cx-dot,.cx-ring,#cur-dot,#cur-ring{display:none;}}
 /* generic tilt targets */
 [data-tilt]{transform-style:preserve-3d;will-change:transform;}
 
